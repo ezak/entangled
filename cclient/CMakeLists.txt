@@ -146,7 +146,7 @@ target_link_libraries(cclient PUBLIC
 )
 
 install(TARGETS cclient DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
-install(DIRECTORY "${PROJECT_SOURCE_DIR}/cclient/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/entangled/cclient" FILES_MATCHING PATTERN "*.h")
+install(DIRECTORY "${PROJECT_SOURCE_DIR}/cclient/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cclient" FILES_MATCHING PATTERN "*.h")
 
 if(${CCLIENT_TEST})
   # ==============API test cases================

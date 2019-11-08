@@ -201,8 +201,8 @@ target_link_libraries(common PUBLIC "${EXTERNAL_LINK_LIBS}")
 
 # install
 install(TARGETS common DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
-install(DIRECTORY "${PROJECT_SOURCE_DIR}/common/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/entangled/common" FILES_MATCHING PATTERN "*.h")
-install(DIRECTORY "${PROJECT_SOURCE_DIR}/utils/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/entangled/utils" FILES_MATCHING PATTERN "*.h")
+install(DIRECTORY "${PROJECT_SOURCE_DIR}/common/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/common" FILES_MATCHING PATTERN "*.h")
+install(DIRECTORY "${PROJECT_SOURCE_DIR}/utils/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include/utils" FILES_MATCHING PATTERN "*.h")
 
 # remove build files
 add_custom_target(clean_build
