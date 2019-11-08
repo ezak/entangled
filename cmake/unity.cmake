@@ -50,6 +50,8 @@ if (NOT __UNITY_INCLUDED)
     # LOG_CONFIGURE 1
     # LOG_INSTALL 1
   )
+    message(~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ${CMAKE_TOOLCHAIN_FILE})
+    message(~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ${CMAKE_INSTALL_PREFIX})
   add_dependencies(ext_unity unity_download)
   set(EXT_LIB_UNITY unity)
 
