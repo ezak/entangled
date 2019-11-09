@@ -58,9 +58,7 @@ if (NOT __UNITY_INCLUDED)
       -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=true
       -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=true
       -DCMAKE_CROSSCOMPILING=true
-      -DCMAKE_BUILD_TYPE=Release
-      -DCMAKE_C_FLAGS=\"-O3 -DNDEBUG -flto -fvisibility=hidden -fdata-sections -ffunction-sections -Wno-unused-command-line-argument\""
-      -DCMAKE_EXE_LINKER_FLAGS=\"-O3 -flto -Wl,--gc-sections -Wl,--strip-all\""
+     
     # for debug
     # LOG_CONFIGURE 1
     # LOG_INSTALL 1
