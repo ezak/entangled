@@ -22,9 +22,6 @@ if (NOT __UNITY_INCLUDED)
     # LOG_DOWNLOAD 1
   )
 
-  message (----------------------------- ${CONFIGURE_COMMAND})
-  message (----------------------------- ${BUILD_COMMAND})
-
   set(unity_cmake_dir ${EXTERNAL_BUILD_DIR}/unity/src/ext_unity)
   set(unity_src_dir ../unity_download)
   set(unity_install_include ${CMAKE_INSTALL_PREFIX}/include/unity)
