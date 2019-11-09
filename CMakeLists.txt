@@ -36,10 +36,10 @@ include(ExternalProject)
 
 # we compile and install entangled all dependencies in a sandbox instead of system dirs.
 # change the default without overriding a user-provided value
-#if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-#  set(CMAKE_INSTALL_PREFIX "${PROJECT_BINARY_DIR}/install" CACHE PATH "..." FORCE)
-#  message(STATUS "set default install path: ${CMAKE_INSTALL_PREFIX}")
-#endif()
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+  set(CMAKE_INSTALL_PREFIX "${PROJECT_BINARY_DIR}/install" CACHE PATH "..." FORCE)
+  message(STATUS "set default install path: ${CMAKE_INSTALL_PREFIX}")
+endif()
 
 include_directories(
   "${CMAKE_INSTALL_PREFIX}/include"
